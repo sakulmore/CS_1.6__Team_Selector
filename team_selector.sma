@@ -119,9 +119,9 @@ LoadConfig() {
         if (file) {
             fprintf(file, "; Here you can rewrite the names of the teams.%c", 10)
             fprintf(file, ";%c", 10)
-            fprintf(file, "Terrorists=^"Terrorists^"%c", 10)
-            fprintf(file, "Counter-Terrorists=^"Counter-Terrorists^"%c", 10)
-            fprintf(file, "Spectators=^"Spectators^"%c", 10)
+            fprintf(file, "Terrorists=%cTerrorists%c%c", 34, 34, 10)
+            fprintf(file, "Counter-Terrorists=%cCounter-Terrorists%c%c", 34, 34, 10)
+            fprintf(file, "Spectators=%cSpectators%c%c", 34, 34, 10)
             fclose(file)
         }
         return
